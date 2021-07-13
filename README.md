@@ -30,8 +30,8 @@
 const middleware = store => next => action => {
   // 하고 싶은 작업...
 }
-미들웨어는 결국 하나의 함수입니다. 함수를 연달아서 두번 리턴하는 함수죠.<br>
-화살표가 여러번 나타나는게 도대체 뭐지, 하고 헷갈릴 수도 있을텐데요,<br>
+미들웨어는 결국 하나의 함수입니다. 함수를 연달아서 두번 리턴하는 함수죠.
+화살표가 여러번 나타나는게 도대체 뭐지, 하고 헷갈릴 수도 있을텐데요,
 이 함수를 function 키워드를 사용하여 작성한다면 다음과 같습니다.
 
 function middleware(store) {
@@ -58,6 +58,8 @@ npm i --save redux-logger
 // redux-devtools-extension, 개발자도구에서 redux Tools 사용가능.
 npm i --save redux-devtools-extension
 ```
+
+---
 
 ## redux-thunk
 
@@ -88,6 +90,8 @@ yarn add react-router-dom
 일단, 컨테이너 컴포넌트내에서 그냥 단순히 withRouter를 사용해서 props 로 history 를 가져와서 사용해도 상관은 없습니다. 하지만 thunk에서 처리를 하면 코드가 훨씬 깔끔해질 수 있습니다. 취향에 따라 택하시면 됩니다.
 withRouter : https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/withRouter.md
 
+---
+
 ## json-server
 
 참고 : https://react.vlpt.us/redux-middleware/08-json-server.html
@@ -117,6 +121,8 @@ yarn add axios
 ./src/api/posts.js에서 확인
 ```
 
+---
+
 ## CORS 와 Webpack DevServer Proxy
 
 참고 : https://react.vlpt.us/redux-middleware/09-cors-and-proxy.html
@@ -139,6 +145,8 @@ CORS : https://developer.mozilla.org/ko/docs/Web/HTTP/CORS#HTTP_%EC%9D%91%EB%8B%
 ```
 axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? '/' : 'https://api.velog.io/';
 ```
+
+---
 
 ## redux-saga
 
@@ -206,6 +214,8 @@ yarn add redux-saga
 ### 프로미스 다루기
 
 참고 : https://react.vlpt.us/redux-middleware/11-redux-saga-with-promise.html
+
+---
 
 # 정리
 
